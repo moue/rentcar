@@ -1,3 +1,8 @@
+# Rentcar Demo
+Working proof of concept of a mobile app for Enterprise Rental Cars using AngularJS.This app should: a. Simplify the process to compare rental car options and b. Allow the user to easily make their reservation. 
+
+[https://afternoon-beyond-2950.herokuapp.com/#/view1](Demo Link)
+
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
