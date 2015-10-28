@@ -1,5 +1,5 @@
 <div class="list-group" ng-controller="CarsController as cars">
-  <div ng-repeat="car in cars | filter:query | orderBy: 'type' ">
+  <div ng-repeat="car in cars | filter:query | orderBy: 'price' ">
     <div class="list-group-item"><img src={{car.pic}} width=200>{{car.type}} {{car.price|currency}} <a href="#/view2"><button class="btn-block">Reserve Car</button></a></div>
   </div>
 </div>
