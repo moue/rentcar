@@ -14,5 +14,8 @@
     "mobile-angular-ui": "~1.2.0-rc.3",
     "angular-datepicker": "~1.0.20",
     "angularjs-datepicker": "~0.2.12"
+  },
+  "resolutions": {
+    "angular": "1.4.7"
   }
 }
