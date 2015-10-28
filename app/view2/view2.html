@@ -1,5 +1,22 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div class="section">
+  <p>Using default credit card. Default pick-up location for reserved cars is 1234 E. 56 St., Austin, TX 78758.</p>
+    
+  <form name="reserveForm">
+    <legend>Select Car</legend>
+    <div ng-controller="CarsController as cars">
+      <select class="form-control" >
+        <option ng-repeat="car in cars" value="{{car.id}}">{{car.type}}  - {{car.price|currency}}</option>
+      </select>
+    </div>
+    <br>
+    <legend>Select Pick-Up Date and Time</legend>
+    <div date-picker="start" max-view="month"></div>
+    <br>
+    <legend>Number of Hours Requested</legend>
+    <input class="form-control" type="val"></input>
+    <br>
+    <a href="#/view1"><button class="btn btn-primary btn-block">
+      Cancel
+    </button></a>
+  </form>
+</div>

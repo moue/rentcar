@@ -10,6 +10,9 @@
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
-    "html5-boilerplate": "~5.2.0"
+    "html5-boilerplate": "~5.2.0",
+    "mobile-angular-ui": "~1.2.0-rc.3",
+    "angular-datepicker": "~1.0.20",
+    "angularjs-datepicker": "~0.2.12"
   }
 }
