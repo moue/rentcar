@@ -1,5 +1,19 @@
-<div class="list-group" ng-controller="CarsController as cars">
-  <div ng-repeat="car in cars | filter:query | orderBy: 'price' ">
-    <div class="list-group-item"><img src={{car.pic}} width=200>{{car.type}} {{car.price|currency}} <a href="#/view2"><button class="btn-block">Reserve Car</button></a></div>
+<style type="text/css">
+  .sortorder:after {
+    content: '\25b2';
+  }
+  .sortorder.reverse:after {
+    content: '\25bc';
+  }
+</style>
+<div class="section">
+  <div class="list-group" ng-controller="CarsController as cars">
+    <ul class="menu">
+      <li><a href="" ng-click="reverse=!reverse;order('price', reverse);predicate='price';">Sort by Price</a><span class="sortorder" ng-show="predicate === 'price'" ng-class="{reverse:reverse}"></li>
+      <li><a href="" ng-click="reverse=!reverse;order('type', reverse);predicate='type';">Sort by Car Type</a><span class="sortorder" ng-show="predicate === 'type'" ng-class="{reverse:reverse}"></span></li>
+    </ul>
+    <div ng-repeat="car in cars | orderBy:predicate:!reverse">
+      <div class="list-group-item"><img src="{{car.pic}}" width=200>{{car.type}} {{car.price|currency}} <a href="#/view2"><button class="btn-block">Reserve Car</button></a></div>
+    </div>
   </div>
 </div>
